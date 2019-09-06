@@ -1,0 +1,33 @@
+<!--pages/posts/posts.wxml-->
+<view>
+  <swiper autoplay="true" indicator-dots="true" style="height:600rpx; ">
+
+    <swiper-item>
+      <image src="/images/wx.png" style="width:750rpx;height:600rpx;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png" style="width:750rpx;height:600rpx;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/iqiyi.png" style="width:750rpx;height:600rpx;"></image>
+    </swiper-item>
+
+  </swiper>
+  <view class="post-container">
+    <view class="post-author-data">
+      <image src="/images/avatar/1.png" class="post-author"></image>
+      <text class="post-date">sep 12 2016</text>
+    </view>
+    <text class="post-title">文章标题</text>
+    <image src="/images/post/crab.png" class="post-img"></image>
+    <text class="post-content">
+    文章内容文章内容文章内容,文章内容文章内容文章内容文章内容,文章内容文章内容文章内容文章内容文章内容文章内,容文章内容文章内容文章内,容文章内容文章内容文章内容文章内容文章内容文章内容文,章内容文章内容文章,内容文章内容文章内容文章,内容
+    </text>
+    <view class="post-like">
+      <image src="/images/icon/chat.png" class="post-like-img"></image>
+      <text class="post-like-txt">899</text>
+      <image src="/images/icon/view.png" class="post-like-img"></image>
+      <text class="post-like-txt">1458</text>
+    </view>
+  </view>
+</view>

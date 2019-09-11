@@ -15,6 +15,7 @@
      //console.log(event)
      var url = this.data.url+"?start="+this.data.totalCount+"&count=20";
      util.http(url, this.processDoubanData);
+     wx.showNavigationBarLoading();
    },
    /**
     * 生命周期函数--监听页面加载
@@ -38,6 +39,7 @@
      wx.setNavigationBarTitle({
        title: category
      })
+
    },
 
    processDoubanData: function(data) {
@@ -61,6 +63,8 @@
        movies.push(temp)
      } 
      this.setData({ movies:this.data.movies.concat(movies)}); 
+     wx.hideNavigationBarLoading();
+
    },
    /**
     * 生命周期函数--监听页面初次渲染完成
@@ -94,7 +98,7 @@
     * 页面相关事件处理函数--监听用户下拉动作
     */
    onPullDownRefresh: function() {
-
+        console.log("下拉了...");
    },
 
    /**

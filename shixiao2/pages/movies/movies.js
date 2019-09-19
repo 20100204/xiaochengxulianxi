@@ -10,8 +10,37 @@ Page({
     inTheaters: {},
     comingSoon: {},
     top250: {},
+    searchResult:{},
+    containerShow:true,
+    searchPannelShow:false,
   },
+  onMovieDetail:function(event){
+    var movieId = event.currentTarget.dataset.movieid;
+    wx.navigateTo({
+      url: './detail/detail?id='+movieId,
+    })
+    
+  },
+  onCloseSearch:function(e){
+     
+    this.setData({
+      containerShow: true,
+      searchPannelShow: false,
+      searchResult: {},
 
+    });
+  },
+  onBindFocus:function(event){
+   this.setData({
+     containerShow:false,
+     searchPannelShow:true,
+   });
+  },
+  onBindChange:function(event){
+     
+    var searchUrl = app.globalData.doubanBase + "/v2/movie/search?q=" + event.detail.value;
+    this.getMovieListData(searchUrl,"searchResult","");
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -11,6 +11,13 @@
      url:"",
      totalCount:0,
    },
+   onMovieDetail: function (event) {
+     var movieId = event.currentTarget.dataset.movieid;
+     wx.navigateTo({
+       url: '../detail/detail?id=' + movieId,
+     })
+
+   },
    onScrollLower:function(event){
      //console.log(event)
      var url = this.data.url+"?start="+this.data.totalCount+"&count=20";

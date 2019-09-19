@@ -1,6 +1,7 @@
 <import src="../movie/movie.wxml" />
 
 <template name="movieGridTemplate">
+ 
   <scroll-view scroll-y="true" scroll-x="false"
   bindscrolltolower="onScrollLower"
  

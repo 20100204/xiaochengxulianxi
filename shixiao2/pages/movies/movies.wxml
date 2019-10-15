@@ -6,6 +6,7 @@
 <input type="text" placeholder="search 文字" placeholder-class="placeholder" bindfocus="onBindFocus" bindconfirm="onBindChange"></input>
 <image src="/images/icon/xx.png" bindtap="onCloseSearch" class="search-close" wx:if="{{searchPannelShow}}"></image>
 </view>
+<text catchtap="onFlexHandler"> flex布局</text>
 <view class="container" wx:if="{{containerShow}}">
   <view class="ma">
     <template is="movieListTemp"  data="{{...inTheaters}}"/>

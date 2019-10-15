@@ -1,0 +1,28 @@
+/* pages/flex/flex.wxss */
+.container{
+display: flex;
+flex-direction: row;
+ height: 200px;
+ background-color: #999;
+ justify-content: flex-start;
+ align-items: center;
+ flex-wrap: wrap-reverse;
+ 
+ 
+}
+.chunk {
+    
+  width: 150px;
+  height: 100px;
+ 
+ 
+}
+.color1 {
+ background-color: red;
+}
+.color2 {
+ background-color: green;
+}
+.color3 {
+ background-color: blue;
+}

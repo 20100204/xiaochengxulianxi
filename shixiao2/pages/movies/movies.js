@@ -21,6 +21,11 @@ Page({
     })
     
   },
+  onFlexHandler:function(){
+    wx.redirectTo({
+      url: '/pages/flex/flex',
+    })
+  },
   onCloseSearch:function(e){
      
     this.setData({

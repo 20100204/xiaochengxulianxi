@@ -1,0 +1,15 @@
+/* components/like/index.wxss */
+.img{
+  width: 32rpx;
+  height: 28rpx;
+}
+.txt{
+  font-size:20rpx;
+  position: relative;
+  top:-12rpx;
+  left:2rpx; 
+  color: #999;
+}
+view{
+  display: inline-flex;
+}
